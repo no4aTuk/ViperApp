@@ -18,8 +18,11 @@ class HomeModuleConfigurator {
     }
 
     private func configure(viewController: HomeViewController) {
+		
+		
+		let childTabbarItems = [ProductsRouter(), ProductsRouter(), ProductsRouter()]
 
-        let router = HomeRouter()
+        let router = HomeRouter(childRouters: [])
 
         let presenter = HomePresenter()
         presenter.view = viewController
@@ -32,6 +35,15 @@ class HomeModuleConfigurator {
         viewController.output = presenter
 		
 		router.viewController = viewController
+		
+		//setup child tab items
+		var controllers: [UIViewController] = []
+		for i in 0..<childTabbarItems.count {
+			let childVC = ProductsRouter().configureModule(title: "Hello Products View Controller \(i)")
+			childVC.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: i)
+			controllers.append(childVC)
+		}
+		viewController.viewControllers = controllers
     }
 
 }

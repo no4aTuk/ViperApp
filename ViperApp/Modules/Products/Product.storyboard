@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJv-gN-rDb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kefa.ttf">
+            <string>Kefa-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Products View Controller-->
+        <scene sceneID="vaR-7h-v7g">
+            <objects>
+                <viewController storyboardIdentifier="ProductsViewController" id="qJv-gN-rDb" customClass="ProductsViewController" customModule="ViperApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NEL-rf-LHS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Products View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1L-rA-pDH">
+                                <rect key="frame" x="42.5" y="322" width="291.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="21"/>
+                                <color key="textColor" red="0.087351314723491669" green="0.019598783925175667" blue="0.97978383302688599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23266738653182983" green="0.92178529500961304" blue="0.80593562126159668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E1L-rA-pDH" firstAttribute="centerY" secondItem="NEL-rf-LHS" secondAttribute="centerY" id="1iN-wB-aOo"/>
+                            <constraint firstItem="E1L-rA-pDH" firstAttribute="centerX" secondItem="NEL-rf-LHS" secondAttribute="centerX" id="tFQ-g9-K8K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LKD-sP-2iW"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="E1L-rA-pDH" id="Vhn-H5-saJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Da2-BK-7jY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15" y="40"/>
+        </scene>
+    </scenes>
+</document>

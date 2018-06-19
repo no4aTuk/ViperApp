@@ -11,15 +11,21 @@ import UIKit
 class ProductsViewController: UIViewController, ProductsViewInput {
 
     var output: ProductsViewOutput!
+	var customTitle: String = ""
+	
+	@IBOutlet weak var titleLabel: UILabel!
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
+		setupInitialState()
     }
 
 
     // MARK: ProductsViewInput
     func setupInitialState() {
+		titleLabel.text = customTitle
     }
 }
+

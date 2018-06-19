@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, HomeViewInput {
+class HomeViewController: UITabBarController, HomeViewInput {
 
     var output: HomeViewOutput!
 
