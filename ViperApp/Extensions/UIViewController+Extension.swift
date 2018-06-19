@@ -17,7 +17,7 @@ extension UIViewController {
 		}
 	}
 	
-	func initFromNib<T: UIViewController>(storyboardName: StoryboardName, bundle: Bundle = Bundle.main) -> T {
+	static func initFromNib<T: UIViewController>(storyboardName: StoryboardName, bundle: Bundle = Bundle.main) -> T {
 		let storyBoard = UIStoryboard(name: storyboardName.rawValue, bundle: bundle)
 		return storyBoard.instantiateViewController(withIdentifier: T.identifier) as! T
 	}

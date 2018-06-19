@@ -1,5 +1,5 @@
 //
-//  HomeHomeConfigurator.swift
+//  ProductsProductsConfigurator.swift
 //  ViperApp
 //
 //  Created by itsmuffintime on 19/06/2018.
@@ -8,30 +8,28 @@
 
 import UIKit
 
-class HomeModuleConfigurator {
+class ProductsModuleConfigurator {
 
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
 
-        if let viewController = viewInput as? HomeViewController {
+        if let viewController = viewInput as? ProductsViewController {
             configure(viewController: viewController)
         }
     }
 
-    private func configure(viewController: HomeViewController) {
+    private func configure(viewController: ProductsViewController) {
 
-        let router = HomeRouter()
+        let router = ProductsRouter()
 
-        let presenter = HomePresenter()
+        let presenter = ProductsPresenter()
         presenter.view = viewController
         presenter.router = router
 
-        let interactor = HomeInteractor()
+        let interactor = ProductsInteractor()
         interactor.output = presenter
 
         presenter.interactor = interactor
         viewController.output = presenter
-		
-		router.viewController = viewController
     }
 
 }
