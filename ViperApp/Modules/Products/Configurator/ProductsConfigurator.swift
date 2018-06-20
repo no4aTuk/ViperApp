@@ -13,13 +13,12 @@ class ProductsModuleConfigurator {
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
 
         if let viewController = viewInput as? ProductsViewController {
-            configure(viewController: viewController)
+            let productsRouter = ProductsRouter()
+            configure(for: viewController, with: productsRouter)
         }
     }
 
-    private func configure(viewController: ProductsViewController) {
-
-        let router = ProductsRouter()
+    func configure(for viewController: ProductsViewController, with router: ProductsRouter) {
 
         let presenter = ProductsPresenter()
         presenter.view = viewController
@@ -30,6 +29,7 @@ class ProductsModuleConfigurator {
 
         presenter.interactor = interactor
         viewController.output = presenter
+        
+        router.viewController = viewController
     }
-
 }

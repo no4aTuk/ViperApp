@@ -10,10 +10,19 @@
 		004555CE929B911788273CA7 /* ProductsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D9190EFC73C3D1C2E6C0A /* ProductsRouterInput.swift */; };
 		00CA284DC2CA7796B8EDAA76 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA7C500DEB9A304873234C /* HomeInteractor.swift */; };
 		1837671CA85B1504CF1F6D09 /* HomeModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DB5D0B5837C4D0B68760AB /* HomeModuleInput.swift */; };
+		185C3E6120DA301700A4AAC5 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185C3E6020DA301700A4AAC5 /* Settings.storyboard */; };
+		185C3E6320DA342200A4AAC5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185C3E6220DA342200A4AAC5 /* Profile.storyboard */; };
+		1CF515B9703BD2CB6C31174B /* SettingsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C41B2A4BCD6C0D406C3ED /* SettingsInteractorInput.swift */; };
 		24F97E276F5AFF810D3305DB /* ProductsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079F239954163E6A608136D /* ProductsViewOutput.swift */; };
 		2F7275A7D01BF11752E4D1A2 /* Pods_ViperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49478C970F9CEE007E03A89 /* Pods_ViperApp.framework */; };
+		31AABB5F1301C4848D8D2215 /* ProfileInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD20EC37C7077561F6389C /* ProfileInteractorOutput.swift */; };
 		3661DA8D1D5DA9631D4949FA /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197933F8E4BEC1609AAA5ED /* HomeConfigurator.swift */; };
+		3A7CBDA4D591B0D4EE5ADEBC /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAD6BE4339FD4B4B64C465 /* ProfileInteractor.swift */; };
+		41E4451412FABCDD2E57B6EF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673C7FCAAF21D54B0B5E43 /* ProfileViewController.swift */; };
+		4F8FEDE21725AF11CA70FBC3 /* ProfileModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB9329C6A1B16CD0204BCC /* ProfileModuleInput.swift */; };
+		5BEF67C5260BF31DE9D17D22 /* SettingsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF33DFB5739ADCDE78E32152 /* SettingsViewOutput.swift */; };
 		5F7F5D29557A5F612925B26F /* HomeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF91C49C6A8EABA770C2DB /* HomeInteractorInput.swift */; };
+		60C966A32E713A07CE6ABCBA /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6032F3429D43EBC2645822 /* SettingsPresenter.swift */; };
 		6369353393746FAA2E5E0FD1 /* ProductsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F657275A0E64741076B12BD /* ProductsInteractor.swift */; };
 		67D41F8520D97A4800FF12E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D41F8420D97A4800FF12E5 /* AppDelegate.swift */; };
 		67D41F8720D97A4800FF12E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D41F8620D97A4800FF12E5 /* ViewController.swift */; };
@@ -32,37 +41,64 @@
 		67F4ED4420D9A9B1008C6ED0 /* HomeTabBarItemRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F4ED4320D9A9B1008C6ED0 /* HomeTabBarItemRouterProtocol.swift */; };
 		6D316707D530AAEBBD1E0FA5 /* ProductsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06407C64FE70BFA9DA406A40 /* ProductsInteractorOutput.swift */; };
 		70153757308AAF6C8E958190 /* ProductsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7AE25D168E24F2C541981 /* ProductsConfigurator.swift */; };
+		706C78D27ED292354E644980 /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43C6640279998D4BCE340C /* SettingsConfigurator.swift */; };
 		7112193CB64C3CF605715864 /* ProductsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8879A0676DC2DDC8547BE4 /* ProductsPresenter.swift */; };
+		7CB04E4575BE67FB41C4865A /* ProfileConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD9CF9284A0FA3395B15BE /* ProfileConfigurator.swift */; };
+		8D6CE3BB0B3FC5F15850C563 /* SettingsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21367C421260B67C21BC12 /* SettingsRouterInput.swift */; };
 		9261F58BAEA0574F10B35700 /* HomeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8176CFA5E1CEFE67765736 /* HomeRouterInput.swift */; };
+		927BF58249E4C38E93D5AD18 /* ProfileInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0304DBD5A88A0CEFA98870C4 /* ProfileInteractorInput.swift */; };
 		9C59B8E7772FF735842746D0 /* ProductsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D5AC976055E26758B3614F /* ProductsModuleInput.swift */; };
+		9D82435F6E8AA89D903CC97B /* ProfileInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C6A59F01297EC44579B54A /* ProfileInitializer.swift */; };
 		9E117AB31F13B252CD80C851 /* HomeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDDC5DAFCA228D12261AF81 /* HomeViewOutput.swift */; };
 		9F303A82FBCCC19616B337E6 /* ProductsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B30B7D315C3D65656F7C1DA /* ProductsInitializer.swift */; };
+		A088345AA2E282DF4F49B96B /* ProfileViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BB2F70B000EF85F91568B /* ProfileViewInput.swift */; };
 		A1759614BA98C5B1D7E69596 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB94941B3341D50E1672AF /* ProductsViewController.swift */; };
+		AC87E351BE80D30B2561739D /* SettingsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBF39B4430EF7375B1C2654 /* SettingsViewInput.swift */; };
+		B095B4A4E04C677A043ED780 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562453BBF249F0F8C9C357EA /* SettingsRouter.swift */; };
 		B0BF6D1F92D541F1C22EAA5C /* ProductsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C66842CDEDB66C11607770 /* ProductsRouter.swift */; };
 		B36BAB0B183101E3CB8A23BE /* HomeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9AAF5F09555705362F0FC /* HomeInteractorOutput.swift */; };
+		B5264C84512305AAF43BA86E /* SettingsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F047185A11C688424991E /* SettingsModuleInput.swift */; };
 		B560D75E6770262C880CB93A /* ProductsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D0D0A89DDCCE11E2D2D6B /* ProductsViewInput.swift */; };
+		B59E3A7094AF73E00169DFCF /* ProfileRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F2108D414DD781BD6BE41 /* ProfileRouterInput.swift */; };
 		B8304AE361EA956108D9E050 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEADAA4DE086B6A1D32B1037 /* HomeViewController.swift */; };
+		BB53DB1C76BDB956006BDAE3 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1382319BFBF6A4B55F5E4 /* ProfilePresenter.swift */; };
 		BD933FAB8C3C5817B4935F94 /* HomeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C170C3095F63B5704281FD1 /* HomeInitializer.swift */; };
+		C24BB7F9270C855BA356DC8B /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B6FA011201EC92D36D2683 /* ProfileRouter.swift */; };
+		C5B875FE2D09F55E807F0198 /* ProfileViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD993329865DA973CA0378EC /* ProfileViewOutput.swift */; };
 		C6AF682771205C62E3D3046C /* HomeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE57AFD011213AA69AFEF /* HomeViewInput.swift */; };
 		CD519D607C75913F567510BB /* ProductsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B214B933DF3A5AA8A5C500 /* ProductsInteractorInput.swift */; };
+		D200C2E5331E286F81B8825D /* SettingsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABF62A3AC6C0C2DC87EB3C /* SettingsInteractorOutput.swift */; };
 		DDEB3D56841F7189BD8B5296 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67E0C6D344DC2F397F2991 /* HomeRouter.swift */; };
 		E39FBB9B50813E65AAE9A307 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B78F22AB3340A288CFCF7 /* HomePresenter.swift */; };
+		E817B1013AAF1ABCE810A01C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A03EA655C5757041C2E15 /* SettingsViewController.swift */; };
+		F4DD40EC40030E04BC3E3593 /* SettingsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB27782AC923FC449B087FE /* SettingsInitializer.swift */; };
+		F7F0476C44633B7F6BE3661C /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD28FD079825E1F22D0DCA /* SettingsInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0304DBD5A88A0CEFA98870C4 /* ProfileInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileInteractorInput.swift; sourceTree = "<group>"; };
 		06407C64FE70BFA9DA406A40 /* ProductsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsInteractorOutput.swift; sourceTree = "<group>"; };
 		0BD9AAF5F09555705362F0FC /* HomeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutput.swift; sourceTree = "<group>"; };
+		0DABF62A3AC6C0C2DC87EB3C /* SettingsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractorOutput.swift; sourceTree = "<group>"; };
+		185C3E6020DA301700A4AAC5 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		185C3E6220DA342200A4AAC5 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		1DB27782AC923FC449B087FE /* SettingsInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInitializer.swift; sourceTree = "<group>"; };
 		2B30B7D315C3D65656F7C1DA /* ProductsInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsInitializer.swift; sourceTree = "<group>"; };
 		2F657275A0E64741076B12BD /* ProductsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsInteractor.swift; sourceTree = "<group>"; };
 		38E7AE25D168E24F2C541981 /* ProductsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsConfigurator.swift; sourceTree = "<group>"; };
+		3A43C6640279998D4BCE340C /* SettingsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		40FD20EC37C7077561F6389C /* ProfileInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileInteractorOutput.swift; sourceTree = "<group>"; };
 		4197933F8E4BEC1609AAA5ED /* HomeConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 		49CB94941B3341D50E1672AF /* ProductsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		50DA7C500DEB9A304873234C /* HomeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		562453BBF249F0F8C9C357EA /* SettingsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
 		58C66842CDEDB66C11607770 /* ProductsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsRouter.swift; sourceTree = "<group>"; };
 		5C170C3095F63B5704281FD1 /* HomeInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInitializer.swift; sourceTree = "<group>"; };
 		5C2D0D0A89DDCCE11E2D2D6B /* ProductsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsViewInput.swift; sourceTree = "<group>"; };
+		5EB1382319BFBF6A4B55F5E4 /* ProfilePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		5F8176CFA5E1CEFE67765736 /* HomeRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouterInput.swift; sourceTree = "<group>"; };
 		5FDDC5DAFCA228D12261AF81 /* HomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
+		656BB2F70B000EF85F91568B /* ProfileViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileViewInput.swift; sourceTree = "<group>"; };
 		67D41F8120D97A4800FF12E5 /* ViperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D41F8420D97A4800FF12E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D41F8620D97A4800FF12E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,18 +116,34 @@
 		67F4ED3F20D9A90F008C6ED0 /* HomeRouterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterDelegate.swift; sourceTree = "<group>"; };
 		67F4ED4120D9A92A008C6ED0 /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
 		67F4ED4320D9A9B1008C6ED0 /* HomeTabBarItemRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarItemRouterProtocol.swift; sourceTree = "<group>"; };
+		6C21367C421260B67C21BC12 /* SettingsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsRouterInput.swift; sourceTree = "<group>"; };
 		6DFF91C49C6A8EABA770C2DB /* HomeInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorInput.swift; sourceTree = "<group>"; };
 		6E6B78F22AB3340A288CFCF7 /* HomePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		737F047185A11C688424991E /* SettingsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsModuleInput.swift; sourceTree = "<group>"; };
+		74C6A59F01297EC44579B54A /* ProfileInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileInitializer.swift; sourceTree = "<group>"; };
+		76B6FA011201EC92D36D2683 /* ProfileRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		76BE1447D9B2009563867580 /* Pods-ViperApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperApp/Pods-ViperApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7D67E0C6D344DC2F397F2991 /* HomeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		88673C7FCAAF21D54B0B5E43 /* ProfileViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8AAD28FD079825E1F22D0DCA /* SettingsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		8C8879A0676DC2DDC8547BE4 /* ProductsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsPresenter.swift; sourceTree = "<group>"; };
+		8DEAD6BE4339FD4B4B64C465 /* ProfileInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		94D5AC976055E26758B3614F /* ProductsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsModuleInput.swift; sourceTree = "<group>"; };
+		9D6032F3429D43EBC2645822 /* SettingsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		9F5D9190EFC73C3D1C2E6C0A /* ProductsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsRouterInput.swift; sourceTree = "<group>"; };
 		AAFFE57AFD011213AA69AFEF /* HomeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewInput.swift; sourceTree = "<group>"; };
+		ADBF39B4430EF7375B1C2654 /* SettingsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewInput.swift; sourceTree = "<group>"; };
 		AEADAA4DE086B6A1D32B1037 /* HomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B166D8F798FE21192E838CDE /* Pods-ViperApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperApp/Pods-ViperApp.release.xcconfig"; sourceTree = "<group>"; };
 		B7DB5D0B5837C4D0B68760AB /* HomeModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeModuleInput.swift; sourceTree = "<group>"; };
+		BD993329865DA973CA0378EC /* ProfileViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileViewOutput.swift; sourceTree = "<group>"; };
+		BF33DFB5739ADCDE78E32152 /* SettingsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewOutput.swift; sourceTree = "<group>"; };
 		C6B214B933DF3A5AA8A5C500 /* ProductsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsInteractorInput.swift; sourceTree = "<group>"; };
+		DEBD9CF9284A0FA3395B15BE /* ProfileConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileConfigurator.swift; sourceTree = "<group>"; };
+		E18F2108D414DD781BD6BE41 /* ProfileRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileRouterInput.swift; sourceTree = "<group>"; };
+		E26C41B2A4BCD6C0D406C3ED /* SettingsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractorInput.swift; sourceTree = "<group>"; };
+		E46A03EA655C5757041C2E15 /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EFDB9329C6A1B16CD0204BCC /* ProfileModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileModuleInput.swift; sourceTree = "<group>"; };
 		F079F239954163E6A608136D /* ProductsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsViewOutput.swift; sourceTree = "<group>"; };
 		F49478C970F9CEE007E03A89 /* Pods_ViperApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -140,6 +192,15 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		26EEB96E19D5FAEE72AC7A6D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EFDB9329C6A1B16CD0204BCC /* ProfileModuleInput.swift */,
+				5EB1382319BFBF6A4B55F5E4 /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		2BA25D5903A1DE998B5136C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +219,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4FCE3A469E7A2842D5B48377 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				3A43C6640279998D4BCE340C /* SettingsConfigurator.swift */,
+				1DB27782AC923FC449B087FE /* SettingsInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		5C34B9EC9BC985E38182DD24 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +236,19 @@
 				2F657275A0E64741076B12BD /* ProductsInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		612BF331AE29B05C446013E9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				185C3E6220DA342200A4AAC5 /* Profile.storyboard */,
+				7E92EEC2F8B0F545EAF3BC97 /* View */,
+				26EEB96E19D5FAEE72AC7A6D /* Presenter */,
+				7AD596EB481611A2301EE489 /* Interactor */,
+				8223DC46647F5DF318E60E47 /* Router */,
+				BCC6D76255F0F09912BF08BF /* Configurator */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		67D41F7820D97A4800FF12E5 = {
@@ -263,6 +346,26 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		7AD596EB481611A2301EE489 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0304DBD5A88A0CEFA98870C4 /* ProfileInteractorInput.swift */,
+				40FD20EC37C7077561F6389C /* ProfileInteractorOutput.swift */,
+				8DEAD6BE4339FD4B4B64C465 /* ProfileInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7E92EEC2F8B0F545EAF3BC97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				656BB2F70B000EF85F91568B /* ProfileViewInput.swift */,
+				BD993329865DA973CA0378EC /* ProfileViewOutput.swift */,
+				88673C7FCAAF21D54B0B5E43 /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8113E91D00E9EC0565C5ED0A /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +374,15 @@
 				50DA7C500DEB9A304873234C /* HomeInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8223DC46647F5DF318E60E47 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E18F2108D414DD781BD6BE41 /* ProfileRouterInput.swift */,
+				76B6FA011201EC92D36D2683 /* ProfileRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		8B0D09DBE3C8DA916252E03D /* View */ = {
@@ -290,6 +402,8 @@
 				67F4ED3420D9A0B7008C6ED0 /* Root */,
 				11719A733ECE39B1C46DE681 /* Home */,
 				9B27A25BFAF36DDAD87B9B94 /* Products */,
+				E7F78761749D5353AD35182E /* Settings */,
+				612BF331AE29B05C446013E9 /* Profile */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -316,6 +430,44 @@
 			path = Products;
 			sourceTree = "<group>";
 		};
+		9DBECE38ECE7E7C2CBABC8E8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				737F047185A11C688424991E /* SettingsModuleInput.swift */,
+				9D6032F3429D43EBC2645822 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A7561C15DEAC35D4B8A7505F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADBF39B4430EF7375B1C2654 /* SettingsViewInput.swift */,
+				BF33DFB5739ADCDE78E32152 /* SettingsViewOutput.swift */,
+				E46A03EA655C5757041C2E15 /* SettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCC6D76255F0F09912BF08BF /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD9CF9284A0FA3395B15BE /* ProfileConfigurator.swift */,
+				74C6A59F01297EC44579B54A /* ProfileInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		DEFD9A99AAD00757618C50EA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E26C41B2A4BCD6C0D406C3ED /* SettingsInteractorInput.swift */,
+				0DABF62A3AC6C0C2DC87EB3C /* SettingsInteractorOutput.swift */,
+				8AAD28FD079825E1F22D0DCA /* SettingsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		E2B220F9839C866934C96729 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +477,19 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		E7F78761749D5353AD35182E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				185C3E6020DA301700A4AAC5 /* Settings.storyboard */,
+				A7561C15DEAC35D4B8A7505F /* View */,
+				9DBECE38ECE7E7C2CBABC8E8 /* Presenter */,
+				DEFD9A99AAD00757618C50EA /* Interactor */,
+				F97B9C2FF12B2C4E9762AADD /* Router */,
+				4FCE3A469E7A2842D5B48377 /* Configurator */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		EAD69FFFBFD5C8622E148B35 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +497,15 @@
 				5C170C3095F63B5704281FD1 /* HomeInitializer.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F97B9C2FF12B2C4E9762AADD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6C21367C421260B67C21BC12 /* SettingsRouterInput.swift */,
+				562453BBF249F0F8C9C357EA /* SettingsRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,10 +570,12 @@
 			files = (
 				67D41F8F20D97A4800FF12E5 /* LaunchScreen.storyboard in Resources */,
 				67F4ED3A20D9A1DD008C6ED0 /* Home.storyboard in Resources */,
+				185C3E6320DA342200A4AAC5 /* Profile.storyboard in Resources */,
 				67D41F9F20D983C100FF12E5 /* Common.storyboard in Resources */,
 				67D41F8C20D97A4800FF12E5 /* Assets.xcassets in Resources */,
 				67F4ED3C20D9A67A008C6ED0 /* Product.storyboard in Resources */,
 				67D41F8A20D97A4800FF12E5 /* Main.storyboard in Resources */,
+				185C3E6120DA301700A4AAC5 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +640,30 @@
 				70153757308AAF6C8E958190 /* ProductsConfigurator.swift in Sources */,
 				67F4ED4220D9A92A008C6ED0 /* TabBarItemType.swift in Sources */,
 				9F303A82FBCCC19616B337E6 /* ProductsInitializer.swift in Sources */,
+				AC87E351BE80D30B2561739D /* SettingsViewInput.swift in Sources */,
+				5BEF67C5260BF31DE9D17D22 /* SettingsViewOutput.swift in Sources */,
+				E817B1013AAF1ABCE810A01C /* SettingsViewController.swift in Sources */,
+				B5264C84512305AAF43BA86E /* SettingsModuleInput.swift in Sources */,
+				60C966A32E713A07CE6ABCBA /* SettingsPresenter.swift in Sources */,
+				1CF515B9703BD2CB6C31174B /* SettingsInteractorInput.swift in Sources */,
+				D200C2E5331E286F81B8825D /* SettingsInteractorOutput.swift in Sources */,
+				F7F0476C44633B7F6BE3661C /* SettingsInteractor.swift in Sources */,
+				8D6CE3BB0B3FC5F15850C563 /* SettingsRouterInput.swift in Sources */,
+				B095B4A4E04C677A043ED780 /* SettingsRouter.swift in Sources */,
+				706C78D27ED292354E644980 /* SettingsConfigurator.swift in Sources */,
+				F4DD40EC40030E04BC3E3593 /* SettingsInitializer.swift in Sources */,
+				A088345AA2E282DF4F49B96B /* ProfileViewInput.swift in Sources */,
+				C5B875FE2D09F55E807F0198 /* ProfileViewOutput.swift in Sources */,
+				41E4451412FABCDD2E57B6EF /* ProfileViewController.swift in Sources */,
+				4F8FEDE21725AF11CA70FBC3 /* ProfileModuleInput.swift in Sources */,
+				BB53DB1C76BDB956006BDAE3 /* ProfilePresenter.swift in Sources */,
+				927BF58249E4C38E93D5AD18 /* ProfileInteractorInput.swift in Sources */,
+				31AABB5F1301C4848D8D2215 /* ProfileInteractorOutput.swift in Sources */,
+				3A7CBDA4D591B0D4EE5ADEBC /* ProfileInteractor.swift in Sources */,
+				B59E3A7094AF73E00169DFCF /* ProfileRouterInput.swift in Sources */,
+				C24BB7F9270C855BA356DC8B /* ProfileRouter.swift in Sources */,
+				7CB04E4575BE67FB41C4865A /* ProfileConfigurator.swift in Sources */,
+				9D82435F6E8AA89D903CC97B /* ProfileInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

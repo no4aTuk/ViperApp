@@ -11,20 +11,16 @@ import UIKit
 class ProductsRouter: ProductsRouterInput {
 	weak var viewController: UIViewController?
 	var delegate: HomeRouterDelegate?
-	
-	static func prepareModule() -> UIViewController {
-		let viewController = ProductsViewController.initFromNib(storyboardName: StoryboardName.product)
-		ProductsModuleConfigurator().configureModuleForViewInput(viewInput: viewController)
-		return viewController
-	}
 }
 
 extension ProductsRouter: HomeTabBarItemRouterProtocol {
 	
 	func configureModule(title: String) -> UIViewController {
 		let viewController: ProductsViewController = ProductsViewController.initFromNib(storyboardName: StoryboardName.product)
-		ProductsModuleConfigurator().configureModuleForViewInput(viewInput: viewController)
+        ProductsModuleConfigurator().configure(for: viewController, with: self)
+        
 		viewController.customTitle = title
+        viewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: TabBarItemType.one.rawValue)
 		let navigationController = UINavigationController(rootViewController: viewController)
 		return navigationController
 	}

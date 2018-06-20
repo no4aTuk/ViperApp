@@ -10,6 +10,6 @@ import Foundation
 
 enum TabBarItemType: Int {
 	case one,
-	two,
+	settings,
 	three
 }

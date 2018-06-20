@@ -26,6 +26,7 @@ class ProductsViewController: UIViewController, ProductsViewInput {
     // MARK: ProductsViewInput
     func setupInitialState() {
 		titleLabel.text = customTitle
+        self.navigationItem.title = "Products"
     }
 }
 
