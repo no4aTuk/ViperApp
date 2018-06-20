@@ -12,8 +12,6 @@ class ProductsViewController: UIViewController, ProductsViewInput {
 
     var output: ProductsViewOutput!
 	var customTitle: String = ""
-	
-	@IBOutlet weak var titleLabel: UILabel!
 
     // MARK: Life cycle
     override func viewDidLoad() {
@@ -25,13 +23,13 @@ class ProductsViewController: UIViewController, ProductsViewInput {
     
     //MARK: Actions
     @IBAction func someAction(_ sender: AnyObject) {
-        output.actionTapped()
+        //output.actionTapped()
     }
 
     // MARK: ProductsViewInput
     func setupInitialState() {
-		//titleLabel.text = customTitle
-        self.navigationItem.title = "Products"
+        //self.navigationItem.title = "Products"
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }
 

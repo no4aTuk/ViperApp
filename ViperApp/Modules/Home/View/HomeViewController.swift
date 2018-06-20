@@ -8,19 +8,14 @@
 
 import UIKit
 
-class HomeViewController: UITabBarController, HomeViewInput {
-
-    var output: HomeViewOutput!
+class HomeTabBarViewController: UITabBarController {
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        output.viewIsReady()
         setupInitialState()
     }
 
-
-    // MARK: HomeViewInput
     func setupInitialState() {
         selectedIndex = 0
     }

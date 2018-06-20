@@ -18,43 +18,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Products View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1L-rA-pDH">
-                                <rect key="frame" x="42.5" y="322" width="291.5" height="24.5"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="21"/>
-                                <color key="textColor" red="0.33725490196078434" green="0.082352941176470587" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpx-ik-5eG">
-                                <rect key="frame" x="127.5" y="446" width="120" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNl-Zf-Yuu" userLabel="SegmentContainerView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fDc-CI-Y08">
+                                        <rect key="frame" x="32" y="10" width="311" height="31"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="CQw-6L-wVx"/>
-                                    <constraint firstAttribute="width" constant="120" id="idm-UF-WLn"/>
+                                    <constraint firstAttribute="height" constant="50" id="4Op-49-rdb"/>
+                                    <constraint firstItem="fDc-CI-Y08" firstAttribute="top" secondItem="FNl-Zf-Yuu" secondAttribute="top" constant="10" id="N0g-Ex-uKK"/>
+                                    <constraint firstAttribute="bottom" secondItem="fDc-CI-Y08" secondAttribute="bottom" constant="10" id="cDl-Ab-yei"/>
+                                    <constraint firstItem="fDc-CI-Y08" firstAttribute="leading" secondItem="FNl-Zf-Yuu" secondAttribute="leading" constant="32" id="oob-yv-3Sa"/>
+                                    <constraint firstAttribute="trailing" secondItem="fDc-CI-Y08" secondAttribute="trailing" constant="32" id="wkf-Wl-mbc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="Navigate">
-                                    <color key="titleColor" red="0.85506778955459595" green="0.13013777136802673" blue="0.94169014692306519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-QE-SDX">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <connections>
-                                    <action selector="someAction:" destination="qJv-gN-rDb" eventType="touchUpInside" id="hPb-4l-SrF"/>
+                                    <segue destination="G9F-7d-fnT" kind="embed" id="KYB-aj-VBj"/>
                                 </connections>
-                            </button>
+                            </containerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.23266738653182983" green="0.92178529500961304" blue="0.80593562126159668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.23266738649999999" green="0.92178529499999995" blue="0.80593562129999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="E1L-rA-pDH" firstAttribute="centerY" secondItem="NEL-rf-LHS" secondAttribute="centerY" id="1iN-wB-aOo"/>
-                            <constraint firstItem="Xpx-ik-5eG" firstAttribute="top" secondItem="E1L-rA-pDH" secondAttribute="bottom" constant="100" id="VcK-G5-ZCL"/>
-                            <constraint firstItem="Xpx-ik-5eG" firstAttribute="centerX" secondItem="NEL-rf-LHS" secondAttribute="centerX" id="ZXi-bf-KHm"/>
-                            <constraint firstItem="E1L-rA-pDH" firstAttribute="centerX" secondItem="NEL-rf-LHS" secondAttribute="centerX" id="tFQ-g9-K8K"/>
+                            <constraint firstItem="LKD-sP-2iW" firstAttribute="trailing" secondItem="SdX-QE-SDX" secondAttribute="trailing" id="UIf-H1-DMN"/>
+                            <constraint firstItem="SdX-QE-SDX" firstAttribute="top" secondItem="FNl-Zf-Yuu" secondAttribute="bottom" id="pxP-d4-bgg"/>
+                            <constraint firstItem="LKD-sP-2iW" firstAttribute="bottom" secondItem="SdX-QE-SDX" secondAttribute="bottom" id="uZi-eY-KKS"/>
+                            <constraint firstItem="SdX-QE-SDX" firstAttribute="leading" secondItem="LKD-sP-2iW" secondAttribute="leading" id="veU-vX-ut8"/>
+                            <constraint firstItem="LKD-sP-2iW" firstAttribute="trailing" secondItem="FNl-Zf-Yuu" secondAttribute="trailing" id="w4i-tk-SjL"/>
+                            <constraint firstItem="FNl-Zf-Yuu" firstAttribute="leading" secondItem="LKD-sP-2iW" secondAttribute="leading" id="yhm-dz-6c3"/>
+                            <constraint firstItem="FNl-Zf-Yuu" firstAttribute="top" secondItem="LKD-sP-2iW" secondAttribute="top" id="yw6-PQ-vB3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LKD-sP-2iW"/>
                     </view>
-                    <connections>
-                        <outlet property="titleLabel" destination="E1L-rA-pDH" id="Vhn-H5-saJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Da2-BK-7jY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-15" y="40"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="5l3-w8-Jem">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="G9F-7d-fnT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ls4-qH-LEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="71"/>
         </scene>
     </scenes>
 </document>

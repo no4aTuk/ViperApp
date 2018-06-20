@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeRouter: HomeRouterInput {
+class HomeRouter {
 	weak var viewController: UITabBarController?
     var childRouters: [HomeTabBarItemRouterProtocol]!
     
@@ -21,9 +21,9 @@ class HomeRouter: HomeRouterInput {
     }
 		
     func configureModule() -> UIViewController {
-		let viewController: HomeViewController = HomeViewController.initFromNib(storyboardName: StoryboardName.common)
+		let viewController: HomeTabBarViewController = HomeTabBarViewController.initFromNib(storyboardName: StoryboardName.common)
 		
-        HomeModuleConfigurator().configureModule(for: viewController, with: self)
+        self.viewController = viewController
         
         //setup child tab items
         var controllers: [UIViewController] = []
