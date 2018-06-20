@@ -9,7 +9,7 @@
 import Foundation
 
 enum TabBarItemType: Int {
-	case one,
+	case products,
 	settings,
-	three
+	profile
 }

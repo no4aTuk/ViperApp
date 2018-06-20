@@ -11,16 +11,21 @@ import UIKit
 class ProductsRouter: ProductsRouterInput {
 	weak var viewController: UIViewController?
 	var delegate: HomeRouterDelegate?
+    
+    func navigate() {
+        delegate?.navigate(to: .settings)
+    }
 }
 
 extension ProductsRouter: HomeTabBarItemRouterProtocol {
 	
-	func configureModule(title: String) -> UIViewController {
+    func configureModule(delegate: HomeRouterDelegate?) -> UIViewController {
 		let viewController: ProductsViewController = ProductsViewController.initFromNib(storyboardName: StoryboardName.product)
+        self.delegate = delegate
         ProductsModuleConfigurator().configure(for: viewController, with: self)
         
-		viewController.customTitle = title
-        viewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: TabBarItemType.one.rawValue)
+		viewController.customTitle = "Products"
+        viewController.tabBarItem = UITabBarItem(title: "Products", image: #imageLiteral(resourceName: "ic_clock"), selectedImage: #imageLiteral(resourceName: "ic_clock_selected"))
 		let navigationController = UINavigationController(rootViewController: viewController)
 		return navigationController
 	}

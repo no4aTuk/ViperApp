@@ -21,13 +21,28 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Settings View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaK-E3-n9s">
                                 <rect key="frame" x="44.5" y="321.5" width="286.5" height="24.5"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="21"/>
-                                <color key="textColor" red="0.1275714635848999" green="0.62512481212615967" blue="0.94087785482406616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.34088200330734253" green="0.070950008928775787" blue="0.2852281928062439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNa-JE-YWd">
+                                <rect key="frame" x="127" y="446" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="muK-ou-gbh"/>
+                                    <constraint firstAttribute="width" constant="120" id="syC-fC-Eah"/>
+                                </constraints>
+                                <state key="normal" title="Navigate">
+                                    <color key="titleColor" red="0.99538463354110718" green="0.15432026982307434" blue="0.00012035094550810754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="someAction:" destination="Ugc-z1-1gz" eventType="touchUpInside" id="Og9-fB-Scn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90048545598983765" green="0.94881731271743774" blue="0.97390443086624146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iNa-JE-YWd" firstAttribute="top" secondItem="kaK-E3-n9s" secondAttribute="bottom" constant="100" id="9Ys-vd-idi"/>
                             <constraint firstItem="kaK-E3-n9s" firstAttribute="centerX" secondItem="nyv-Pk-dyy" secondAttribute="centerX" id="B2M-mW-LqO"/>
+                            <constraint firstItem="iNa-JE-YWd" firstAttribute="centerX" secondItem="nyv-Pk-dyy" secondAttribute="centerX" id="kMm-bA-ONY"/>
                             <constraint firstItem="kaK-E3-n9s" firstAttribute="centerY" secondItem="nyv-Pk-dyy" secondAttribute="centerY" id="nOX-3b-RyR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4fr-Gv-7z8"/>

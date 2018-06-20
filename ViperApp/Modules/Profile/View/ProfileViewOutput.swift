@@ -9,9 +9,12 @@
 protocol ProfileViewOutput {
 
     /**
-        @author Nikolay
         Notify presenter that view is ready
     */
-
     func viewIsReady()
+    
+    /**
+        Navigate to next tab item
+    */
+    func navigate()
 }

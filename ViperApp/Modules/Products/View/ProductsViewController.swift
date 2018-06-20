@@ -22,10 +22,15 @@ class ProductsViewController: UIViewController, ProductsViewInput {
 		setupInitialState()
     }
 
+    
+    //MARK: Actions
+    @IBAction func someAction(_ sender: AnyObject) {
+        output.actionTapped()
+    }
 
     // MARK: ProductsViewInput
     func setupInitialState() {
-		titleLabel.text = customTitle
+		//titleLabel.text = customTitle
         self.navigationItem.title = "Products"
     }
 }

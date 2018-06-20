@@ -10,7 +10,7 @@ import UIKit
 
 class HomeRouter: HomeRouterInput {
 	weak var viewController: UITabBarController?
-    let childRouters: [HomeTabBarItemRouterProtocol]!
+    var childRouters: [HomeTabBarItemRouterProtocol]!
     
     public init(childRouters: [HomeTabBarItemRouterProtocol]) {
         self.childRouters = childRouters
@@ -21,19 +21,24 @@ class HomeRouter: HomeRouterInput {
     }
 		
     func configureModule() -> UIViewController {
-		let viewController: HomeViewController = HomeViewController.initFromNib(storyboardName: StoryboardName.home)
+		let viewController: HomeViewController = HomeViewController.initFromNib(storyboardName: StoryboardName.common)
 		
         HomeModuleConfigurator().configureModule(for: viewController, with: self)
         
         //setup child tab items
         var controllers: [UIViewController] = []
-        for (i, router) in childRouters.enumerated() {
-            let childVC = router.configureModule(title: "Hello Products View Controller \(i)")
+        for router in childRouters {
+            let childVC = router.configureModule(delegate: self)
             controllers.append(childVC)
         }
         viewController.viewControllers = controllers
-        viewController.selectedIndex = 1
 		
 		return viewController
 	}
+}
+
+extension HomeRouter: HomeRouterDelegate {
+    func navigate(to tabItem: TabBarItemType) {
+        self.viewController?.selectedIndex = tabItem.rawValue
+    }
 }

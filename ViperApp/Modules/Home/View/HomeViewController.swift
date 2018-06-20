@@ -16,10 +16,12 @@ class HomeViewController: UITabBarController, HomeViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
+        setupInitialState()
     }
 
 
     // MARK: HomeViewInput
     func setupInitialState() {
+        selectedIndex = 0
     }
 }

@@ -13,12 +13,17 @@ class SettingsRouter: SettingsRouterInput, HomeTabBarItemRouterProtocol {
     
     weak var viewController: UIViewController?
     
-    func configureModule(title: String) -> UIViewController {
+    func configureModule(delegate: HomeRouterDelegate?) -> UIViewController {
         let viewController: SettingsViewController = SettingsViewController.initFromNib(storyboardName: StoryboardName.settings)
+        self.delegate = delegate
         SettingsModuleConfigurator().configure(for: viewController, with: self)
-        viewController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: TabBarItemType.settings.rawValue)
+        viewController.tabBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "ic_settings"), selectedImage: #imageLiteral(resourceName: "ic_settings_selected"))
         
         let navigation = UINavigationController(rootViewController: viewController)
         return navigation
+    }
+    
+    func navigate() {
+        delegate?.navigate(to: .profile)
     }
 }

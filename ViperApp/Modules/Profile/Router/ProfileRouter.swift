@@ -13,12 +13,19 @@ class ProfileRouter: ProfileRouterInput, HomeTabBarItemRouterProtocol {
     
     weak var viewController: UIViewController?
     
-    func configureModule(title: String) -> UIViewController {
+    func configureModule(delegate: HomeRouterDelegate?) -> UIViewController {
         let viewController: ProfileViewController = ProfileViewController.initFromNib(storyboardName: StoryboardName.profile)
+        
+        self.delegate = delegate
+        
         ProfileModuleConfigurator().configure(for: viewController, with: self)
-        viewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: TabBarItemType.three.rawValue)
+        viewController.tabBarItem = UITabBarItem(title: "Profile", image: #imageLiteral(resourceName: "ic_eat"), selectedImage: #imageLiteral(resourceName: "ic_eat_selected"))
         
         let navigation = UINavigationController(rootViewController: viewController)
         return navigation
+    }
+    
+    func navigate() {
+        delegate?.navigate(to: .products)
     }
 }

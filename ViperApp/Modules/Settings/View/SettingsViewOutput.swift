@@ -14,4 +14,5 @@ protocol SettingsViewOutput {
     */
 
     func viewIsReady()
+    func navigate()
 }

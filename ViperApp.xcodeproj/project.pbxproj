@@ -172,6 +172,7 @@
 		11719A733ECE39B1C46DE681 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				67F4ED3920D9A1DD008C6ED0 /* Home.storyboard */,
 				8B0D09DBE3C8DA916252E03D /* View */,
 				6CB3FBE19C3A799396E09C96 /* Presenter */,
 				8113E91D00E9EC0565C5ED0A /* Interactor */,
@@ -388,7 +389,6 @@
 		8B0D09DBE3C8DA916252E03D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				67F4ED3920D9A1DD008C6ED0 /* Home.storyboard */,
 				AAFFE57AFD011213AA69AFEF /* HomeViewInput.swift */,
 				5FDDC5DAFCA228D12261AF81 /* HomeViewOutput.swift */,
 				AEADAA4DE086B6A1D32B1037 /* HomeViewController.swift */,
@@ -743,6 +743,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -792,6 +793,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

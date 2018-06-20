@@ -14,4 +14,5 @@ protocol ProductsViewOutput {
     */
 
     func viewIsReady()
+    func actionTapped()
 }

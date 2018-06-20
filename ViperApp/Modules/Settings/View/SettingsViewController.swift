@@ -11,6 +11,11 @@ import UIKit
 class SettingsViewController: UIViewController, SettingsViewInput {
 
     var output: SettingsViewOutput!
+    
+    //MARK: Outlets
+    @IBAction func someAction(_ sender: AnyObject) {
+        output.navigate()
+    }
 
     // MARK: Life cycle
     override func viewDidLoad() {

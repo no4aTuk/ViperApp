@@ -15,4 +15,8 @@ class ProfilePresenter: ProfileModuleInput, ProfileViewOutput, ProfileInteractor
     func viewIsReady() {
 
     }
+    
+    func navigate() {
+        router.navigate()
+    }
 }

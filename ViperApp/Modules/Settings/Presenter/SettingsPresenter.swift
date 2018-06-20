@@ -15,4 +15,8 @@ class SettingsPresenter: SettingsModuleInput, SettingsViewOutput, SettingsIntera
     func viewIsReady() {
 
     }
+    
+    func navigate() {
+        router.navigate()
+    }
 }

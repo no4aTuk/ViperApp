@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ProfileRouterInput {
-
+    func navigate()
 }

@@ -11,12 +11,19 @@ import UIKit
 class ProfileViewController: UIViewController, ProfileViewInput {
 
     var output: ProfileViewOutput!
+    
+    //MARK: Outlets
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
         setupInitialState()
+    }
+    
+    //MARK: Actions
+    @IBAction func someAction(_ sender: UIButton) {
+        output.navigate()
     }
 
 

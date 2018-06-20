@@ -12,11 +12,8 @@ import UIKit
 class RootRouter: RootRouterProtocol {
 	func presentHomeTabBarViewController(in window: UIWindow) {
 		window.makeKeyAndVisible()
-        let vc1Router = ProductsRouter()
-        let vc2Router = SettingsRouter()
-        let vc3Router = ProfileRouter()
-        
-        let homeRouter = HomeRouter(childRouters: [vc1Router, vc2Router, vc3Router])
+        let routers: [HomeTabBarItemRouterProtocol] = [ProductsRouter(), SettingsRouter(), ProfileRouter()]
+        let homeRouter = HomeRouter(childRouters: routers)
 		window.rootViewController = homeRouter.configureModule()
 	}
 }

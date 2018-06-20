@@ -15,4 +15,8 @@ class ProductsPresenter: ProductsModuleInput, ProductsViewOutput, ProductsIntera
     func viewIsReady() {
 
     }
+    
+    func actionTapped() {
+        router.navigate()
+    }
 }

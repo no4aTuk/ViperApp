@@ -11,6 +11,5 @@ import UIKit
 
 protocol HomeTabBarItemRouterProtocol {
 	var delegate: HomeRouterDelegate? {get set}
-	
-	func configureModule(title: String) -> UIViewController
+    func configureModule(delegate: HomeRouterDelegate?) -> UIViewController
 }
