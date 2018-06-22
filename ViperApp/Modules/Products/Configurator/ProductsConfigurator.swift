@@ -14,13 +14,14 @@ class ProductsModuleConfigurator {
 
         if let viewController = viewInput as? ProductsViewController {
             let productsRouter = ProductsRouter()
-            configure(for: viewController, with: productsRouter)
+            let productType = ProductType.phones
+            configure(for: viewController, with: productsRouter, and: productType)
         }
     }
 
-    func configure(for viewController: ProductsViewController, with router: ProductsRouter) {
+    func configure(for viewController: ProductsViewController, with router: ProductsRouter, and productType: ProductType) {
 
-        let presenter = ProductsPresenter()
+        let presenter = ProductsPresenter(productType: productType)
         presenter.view = viewController
         presenter.router = router
 

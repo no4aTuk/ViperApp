@@ -14,4 +14,5 @@ protocol ProductsViewInput: class {
     */
 
     func setupInitialState()
+    func setViewTitle(_ title: String)
 }

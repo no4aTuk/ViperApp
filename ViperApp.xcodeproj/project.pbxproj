@@ -12,6 +12,10 @@
 		185C3E6320DA342200A4AAC5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185C3E6220DA342200A4AAC5 /* Profile.storyboard */; };
 		185C3E6520DA4D4000A4AAC5 /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C3E6420DA4D4000A4AAC5 /* ProductType.swift */; };
 		185C3E6720DA868400A4AAC5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C3E6620DA868400A4AAC5 /* HomeViewController.swift */; };
+		18BE8FA920DCE507009660C4 /* ProductsPagerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8FA820DCE507009660C4 /* ProductsPagerRouter.swift */; };
+		18BE8FAB20DCE51B009660C4 /* ProductsPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8FAA20DCE51B009660C4 /* ProductsPagerViewController.swift */; };
+		18BE8FAF20DCE55D009660C4 /* ProductsPagerRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8FAE20DCE55D009660C4 /* ProductsPagerRouterInput.swift */; };
+		18BE8FB120DCE62B009660C4 /* PagerItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8FB020DCE62B009660C4 /* PagerItemProtocol.swift */; };
 		1CF515B9703BD2CB6C31174B /* SettingsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C41B2A4BCD6C0D406C3ED /* SettingsInteractorInput.swift */; };
 		24F97E276F5AFF810D3305DB /* ProductsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079F239954163E6A608136D /* ProductsViewOutput.swift */; };
 		2F7275A7D01BF11752E4D1A2 /* Pods_ViperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49478C970F9CEE007E03A89 /* Pods_ViperApp.framework */; };
@@ -73,6 +77,10 @@
 		185C3E6220DA342200A4AAC5 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		185C3E6420DA4D4000A4AAC5 /* ProductType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
 		185C3E6620DA868400A4AAC5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18BE8FA820DCE507009660C4 /* ProductsPagerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPagerRouter.swift; sourceTree = "<group>"; };
+		18BE8FAA20DCE51B009660C4 /* ProductsPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPagerViewController.swift; sourceTree = "<group>"; };
+		18BE8FAE20DCE55D009660C4 /* ProductsPagerRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPagerRouterInput.swift; sourceTree = "<group>"; };
+		18BE8FB020DCE62B009660C4 /* PagerItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerItemProtocol.swift; sourceTree = "<group>"; };
 		1DB27782AC923FC449B087FE /* SettingsInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInitializer.swift; sourceTree = "<group>"; };
 		2B30B7D315C3D65656F7C1DA /* ProductsInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsInitializer.swift; sourceTree = "<group>"; };
 		2F657275A0E64741076B12BD /* ProductsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductsInteractor.swift; sourceTree = "<group>"; };
@@ -156,6 +164,33 @@
 				251D09B387F2621278BFB0A5 /* Router */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		18BE8FA720DCE4F4009660C4 /* ProductsPager */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8FAD20DCE52A009660C4 /* Router */,
+				18BE8FAC20DCE526009660C4 /* View */,
+			);
+			path = ProductsPager;
+			sourceTree = "<group>";
+		};
+		18BE8FAC20DCE526009660C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8FAA20DCE51B009660C4 /* ProductsPagerViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BE8FAD20DCE52A009660C4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8FA820DCE507009660C4 /* ProductsPagerRouter.swift */,
+				18BE8FAE20DCE55D009660C4 /* ProductsPagerRouterInput.swift */,
+				18BE8FB020DCE62B009660C4 /* PagerItemProtocol.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		251D09B387F2621278BFB0A5 /* Router */ = {
@@ -354,6 +389,7 @@
 		957C056030EB324EB3B2DFCA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				18BE8FA720DCE4F4009660C4 /* ProductsPager */,
 				67F4ED3420D9A0B7008C6ED0 /* Root */,
 				11719A733ECE39B1C46DE681 /* Home */,
 				9B27A25BFAF36DDAD87B9B94 /* Products */,
@@ -553,13 +589,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				67D41F9D20D97E0C00FF12E5 /* UIViewController+Extension.swift in Sources */,
+				18BE8FAF20DCE55D009660C4 /* ProductsPagerRouterInput.swift in Sources */,
 				67D41F8720D97A4800FF12E5 /* ViewController.swift in Sources */,
 				67D41F8520D97A4800FF12E5 /* AppDelegate.swift in Sources */,
 				67F4ED3820D9A0DC008C6ED0 /* RootRouter.swift in Sources */,
 				67F4ED4420D9A9B1008C6ED0 /* HomeTabBarItemRouterProtocol.swift in Sources */,
+				18BE8FB120DCE62B009660C4 /* PagerItemProtocol.swift in Sources */,
 				67D41F9B20D97DD300FF12E5 /* Storyboards.swift in Sources */,
 				67F4ED3620D9A0D6008C6ED0 /* RootRouterProtocol.swift in Sources */,
 				DDEB3D56841F7189BD8B5296 /* HomeRouter.swift in Sources */,
+				18BE8FAB20DCE51B009660C4 /* ProductsPagerViewController.swift in Sources */,
 				B560D75E6770262C880CB93A /* ProductsViewInput.swift in Sources */,
 				24F97E276F5AFF810D3305DB /* ProductsViewOutput.swift in Sources */,
 				A1759614BA98C5B1D7E69596 /* ProductsViewController.swift in Sources */,
@@ -598,6 +637,7 @@
 				3A7CBDA4D591B0D4EE5ADEBC /* ProfileInteractor.swift in Sources */,
 				B59E3A7094AF73E00169DFCF /* ProfileRouterInput.swift in Sources */,
 				C24BB7F9270C855BA356DC8B /* ProfileRouter.swift in Sources */,
+				18BE8FA920DCE507009660C4 /* ProductsPagerRouter.swift in Sources */,
 				7CB04E4575BE67FB41C4865A /* ProfileConfigurator.swift in Sources */,
 				9D82435F6E8AA89D903CC97B /* ProfileInitializer.swift in Sources */,
 			);

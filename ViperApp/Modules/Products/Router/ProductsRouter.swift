@@ -9,24 +9,18 @@
 import UIKit
 
 class ProductsRouter: ProductsRouterInput {
+
 	weak var viewController: UIViewController?
-	var delegate: HomeRouterDelegate?
-    
-    func navigate() {
-        delegate?.navigate(to: .settings)
-    }
+	var delegate: ProductsPagerRouterInput?
 }
 
-extension ProductsRouter: HomeTabBarItemRouterProtocol {
+extension ProductsRouter: PagerItemProtocol {
 	
-    func configureModule(delegate: HomeRouterDelegate?) -> UIViewController {
+    func configureModule(delegate: ProductsPagerRouterInput, itemType: ProductType) -> UIViewController {
 		let viewController: ProductsViewController = ProductsViewController.initFromNib(storyboardName: StoryboardName.product)
         self.delegate = delegate
-        ProductsModuleConfigurator().configure(for: viewController, with: self)
-        
-		viewController.customTitle = "Products"
-        viewController.tabBarItem = UITabBarItem(title: "Products", image: #imageLiteral(resourceName: "ic_clock"), selectedImage: #imageLiteral(resourceName: "ic_clock_selected"))
-		let navigationController = UINavigationController(rootViewController: viewController)
-		return navigationController
+        ProductsModuleConfigurator().configure(for: viewController, with: self, and: itemType)
+    
+		return viewController
 	}
 }

@@ -10,8 +10,12 @@ import UIKit
 
 class ProductsViewController: UIViewController, ProductsViewInput {
 
+    //MARK: properties
     var output: ProductsViewOutput!
 	var customTitle: String = ""
+    
+    //MARK: Outlets
+    @IBOutlet weak var titleLabel: UILabel!
 
     // MARK: Life cycle
     override func viewDidLoad() {
@@ -28,8 +32,11 @@ class ProductsViewController: UIViewController, ProductsViewInput {
 
     // MARK: ProductsViewInput
     func setupInitialState() {
-        //self.navigationItem.title = "Products"
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    func setViewTitle(_ title: String) {
+        self.titleLabel.text = title
     }
 }
 
