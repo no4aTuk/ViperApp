@@ -9,4 +9,6 @@
 import Foundation
 
 protocol ProductsRouterInput {
+    func switchToSibling()
+    func navigateToSettingTab()
 }

@@ -21,10 +21,14 @@ class ProductsPresenter: ProductsModuleInput, ProductsViewOutput, ProductsIntera
     }
     
     func viewIsReady() {
-        view.setViewTitle(productType == .phones ? "phones" : "laptops")
+        view.setViewTitle(productType == .phones ? "Phones" : "Laptops")
     }
     
     func actionTapped() {
-        
+        router.switchToSibling()
+    }
+    
+    func navigateToSettings() {
+        router.navigateToSettingTab()
     }
 }

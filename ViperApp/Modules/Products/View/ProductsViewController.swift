@@ -27,7 +27,11 @@ class ProductsViewController: UIViewController, ProductsViewInput {
     
     //MARK: Actions
     @IBAction func someAction(_ sender: AnyObject) {
-        //output.actionTapped()
+        output.actionTapped()
+    }
+    
+    @IBAction func navigateToSettings(_ sender: AnyObject) {
+        output.navigateToSettings()
     }
 
     // MARK: ProductsViewInput

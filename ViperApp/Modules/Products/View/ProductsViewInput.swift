@@ -8,11 +8,10 @@
 
 protocol ProductsViewInput: class {
 
-    /**
-        @author itsmuffintime
-        Setup initial state of the view
-    */
-
     func setupInitialState()
+    
+    /// oh shit method
+    ///
+    /// - Parameter title: main title for list
     func setViewTitle(_ title: String)
 }

@@ -18,6 +18,14 @@ class ProductsPagerRouter: ProductsPagerRouterInput, HomeTabBarItemRouterProtoco
         delegate?.navigate(to: .settings)
     }
     
+    func switchToNexSibling() {
+        pagerViewController?.goToNextPage(animated: true)
+    }
+    
+    func navigateToSettingsTab() {
+        delegate?.navigate(to: .settings)
+    }
+    
     func configureModule(delegate: HomeRouterDelegate?) -> UIViewController {
         let controller: ProductsPagerViewController = ProductsPagerViewController.initFromNib(storyboardName: StoryboardName.product)
         

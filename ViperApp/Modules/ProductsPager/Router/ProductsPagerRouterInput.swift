@@ -9,5 +9,6 @@
 import Foundation
 
 protocol ProductsPagerRouterInput {
-    
+    func switchToNexSibling()
+    func navigateToSettingsTab()
 }
